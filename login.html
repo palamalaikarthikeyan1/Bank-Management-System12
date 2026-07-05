@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Customer Login</h2>
+
+    <input type="text" id="customerId" placeholder="Customer ID">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <br><br>
+
+    <a href="index.html">⬅ Back to Home</a>
+
+</div>
+
+<script>
+function login(){
+
+    let id=document.getElementById("customerId").value;
+    let pass=document.getElementById("password").value;
+
+    if(id=="CUST1001" && pass=="1234"){
+
+        window.location.href="dashboard.html";
+
+    }else{
+
+        alert("Invalid Customer ID or Password");
+
+    }
+
+}
+</script>
+
+</body>
+</html>
